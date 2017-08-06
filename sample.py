@@ -102,7 +102,7 @@ class MainPage(tk.Frame):
         self.app_btn_clicked = 0
         self.configure(background='#212121')
 
-        self.img5 = tk.PhotoImage(file="apps.png")
+        self.img5 = tk.PhotoImage(file="images/apps.png")
         button3 = tk.Button(self)
         button3.config(image=self.img5, borderwidth=0, background='#212121',
                        command=lambda: self.app_click_func(controller), highlightthickness=0, bd=0)
@@ -148,12 +148,12 @@ class StartPage(tk.Frame):
         tk.Frame.__init__(self, parent)
         self.configure(background='#212121')
 
-        self.img_power = tk.PhotoImage(file="power.png")
+        self.img_power = tk.PhotoImage(file="images/power.png")
         button_power = tk.Button(self, text="Power", command=lambda: controller.show_frame(Power_App))
         button_power.config(image=self.img_power, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button_power.grid(row=0, column=2, pady=4)
 
-        self.img = tk.PhotoImage(file="app_home.png")
+        self.img = tk.PhotoImage(file="images/app_home.png")
         button = tk.Button(self, command=self.sample2)
         button.config(image=self.img, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button.grid(row=1, column=0, padx=15, pady=5)
@@ -161,7 +161,7 @@ class StartPage(tk.Frame):
                                foreground='#ffffff')
         self.label1.grid(row=2, column=0)
 
-        self.img2 = tk.PhotoImage(file="app_2_twitter.png")
+        self.img2 = tk.PhotoImage(file="images/app_2_twitter.png")
         button1 = tk.Button(self, command=lambda: controller.show_frame(TwitterApp))
         button1.config(image=self.img2, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button1.grid(row=1, column=1, padx=26, pady=5)
@@ -169,7 +169,7 @@ class StartPage(tk.Frame):
                                foreground='#ffffff')
         self.label2.grid(row=2, column=1)
 
-        self.img3 = tk.PhotoImage(file="app_3_alarm.png")
+        self.img3 = tk.PhotoImage(file="images/app_3_alarm.png")
         button2 = tk.Button(self, command=lambda: controller.show_frame(Alarm_App))
         button2.config(image=self.img3, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button2.grid(row=1, column=2, padx=26, pady=5)
@@ -177,7 +177,7 @@ class StartPage(tk.Frame):
                                foreground='#ffffff')
         self.label3.grid(row=2, column=2)
 
-        self.img4 = tk.PhotoImage(file="app_4_news.png")
+        self.img4 = tk.PhotoImage(file="images/app_4_news.png")
         button3 = tk.Button(self, command=lambda: controller.show_frame(NewsApp))
         button3.config(image=self.img4, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button3.grid(row=3, column=0, padx=26, pady=5)
@@ -185,7 +185,7 @@ class StartPage(tk.Frame):
                                foreground='#ffffff')
         self.label4.grid(row=4, column=0)
 
-        self.img5 = tk.PhotoImage(file="app_5_weather.png")
+        self.img5 = tk.PhotoImage(file="images/app_5_weather.png")
         button4 = tk.Button(self, command=lambda: controller.show_frame(WeatherApp))
         button4.config(image=self.img5, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button4.grid(row=3, column=1, padx=26, pady=5)
@@ -193,7 +193,7 @@ class StartPage(tk.Frame):
                                foreground='#ffffff')
         self.label5.grid(row=4, column=1)
 
-        self.img6 = tk.PhotoImage(file="app_1_media_player.png")
+        self.img6 = tk.PhotoImage(file="images/app_1_media_player.png")
         button5 = tk.Button(self, command=lambda: controller.show_frame(MediaPlayer))
         button5.config(image=self.img6, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button5.grid(row=3, column=2, padx=26, pady=5)
@@ -201,7 +201,7 @@ class StartPage(tk.Frame):
                                foreground='#ffffff')
         self.label6.grid(row=4, column=2)
 
-        self.img_next = tk.PhotoImage(file="next.png")
+        self.img_next = tk.PhotoImage(file="images/next.png")
         button_next = tk.Button(self, text="Next", command=lambda: controller.show_frame(StartPage2))
         button_next.config(image=self.img_next, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button_next.grid(row=5, column=2, pady=4)
@@ -210,7 +210,7 @@ class StartPage(tk.Frame):
                                foreground='#ffffff')
         self.label6.grid(row=5, column=1)
 
-        self.img_prev = tk.PhotoImage(file="prev.png")
+        self.img_prev = tk.PhotoImage(file="images/prev.png")
         button_prev = tk.Button(self, text="Next")
         button_prev.config(image=self.img_prev, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button_prev.grid(row=5, column=0, pady=4)
@@ -231,12 +231,12 @@ class StartPage2(tk.Frame):
         tk.Frame.__init__(self, parent)
         self.configure(background='#212121')
 
-        self.img_power = tk.PhotoImage(file="power.png")
+        self.img_power = tk.PhotoImage(file="images/power.png")
         button_power = tk.Button(self, text="Power", command=lambda: controller.show_frame(Power_App))
         button_power.config(image=self.img_power, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button_power.grid(row=0, column=2, pady=4)
 
-        self.img = tk.PhotoImage(file="app_snake_game.png")
+        self.img = tk.PhotoImage(file="images/app_snake_game.png")
         button = tk.Button(self, command=self.sample)
         button.config(image=self.img, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button.grid(row=1, column=0, padx=15, pady=5)
@@ -244,7 +244,7 @@ class StartPage2(tk.Frame):
                                foreground='#ffffff')
         self.label1.grid(row=2, column=0)
 
-        self.img2 = tk.PhotoImage(file="app_tic_tac_toe.png")
+        self.img2 = tk.PhotoImage(file="images/app_tic_tac_toe.png")
         button1 = tk.Button(self)
         button1.config(image=self.img2, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button1.grid(row=1, column=1, padx=26, pady=5)
@@ -252,7 +252,7 @@ class StartPage2(tk.Frame):
                                foreground='#ffffff')
         self.label2.grid(row=2, column=1)
 
-        self.img3 = tk.PhotoImage(file="app_radio.png")
+        self.img3 = tk.PhotoImage(file="images/app_radio.png")
         button2 = tk.Button(self, command=self.sample_radio)
         button2.config(image=self.img3, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button2.grid(row=1, column=2, padx=26, pady=5)
@@ -260,7 +260,7 @@ class StartPage2(tk.Frame):
                                foreground='#ffffff')
         self.label3.grid(row=2, column=2)
 
-        self.img4 = tk.PhotoImage(file="app_memes.png")
+        self.img4 = tk.PhotoImage(file="images/app_memes.png")
         button3 = tk.Button(self)
         button3.config(image=self.img4, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button3.grid(row=3, column=0, padx=26, pady=5)
@@ -268,7 +268,7 @@ class StartPage2(tk.Frame):
                                foreground='#ffffff')
         self.label4.grid(row=4, column=0)
 
-        self.img5 = tk.PhotoImage(file="share_market_app.png")
+        self.img5 = tk.PhotoImage(file="images/share_market_app.png")
         button4 = tk.Button(self, command=lambda: controller.show_frame(ShareMarketApp))
         button4.config(image=self.img5, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button4.grid(row=3, column=1, padx=26, pady=5)
@@ -276,7 +276,7 @@ class StartPage2(tk.Frame):
                                foreground='#ffffff')
         self.label5.grid(row=4, column=1)
 
-        self.img6 = tk.PhotoImage(file="clock_app.png")
+        self.img6 = tk.PhotoImage(file="images/clock_app.png")
         button5 = tk.Button(self)
         button5.config(image=self.img6, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button5.grid(row=3, column=2, padx=26, pady=5)
@@ -287,11 +287,11 @@ class StartPage2(tk.Frame):
         self.label6 = tk.Label(self, text="Page 2 of 2", font=("Helvetica", 10), background='#212121',
                                foreground='#ffffff')
         self.label6.grid(row=5, column=1)
-        self.img_next = tk.PhotoImage(file="next.png")
+        self.img_next = tk.PhotoImage(file="images/next.png")
         button_next = tk.Button(self)
         button_next.config(image=self.img_next, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button_next.grid(row=5, column=2, pady=4)
-        self.img_prev = tk.PhotoImage(file="prev.png")
+        self.img_prev = tk.PhotoImage(file="images/prev.png")
         button_prev = tk.Button(self, command=lambda: controller.show_frame(StartPage))
         button_prev.config(image=self.img_prev, background='#212121', borderwidth=0, highlightthickness=0, bd=0)
         button_prev.grid(row=5, column=0, pady=4)
@@ -301,22 +301,22 @@ class Power_App(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         self.config(background="#424242")
-        self.img_power_off = tk.PhotoImage(file='button_power-off.png')
+        self.img_power_off = tk.PhotoImage(file='images/button_power-off.png')
         self.btn_power_off = tk.Button(self, image=self.img_power_off, highlightthickness=0, background="#424242",
                                        borderwidth=0, command=self.quit)
         self.btn_power_off.place(x=45, y=10)
 
-        self.img_reboot = tk.PhotoImage(file='button_reboot.png')
+        self.img_reboot = tk.PhotoImage(file='images/button_reboot.png')
         self.btn_reboot = tk.Button(self, image=self.img_reboot, highlightthickness=0, background="#424242",
                                     borderwidth=0, command=self.quit)
         self.btn_reboot.place(x=45, y=60)
 
-        self.img_exit = tk.PhotoImage(file='button_exit.png')
+        self.img_exit = tk.PhotoImage(file='images/button_exit.png')
         self.btn_exit = tk.Button(self, image=self.img_exit, highlightthickness=0, background="#424242", borderwidth=0,
                                   command=self.quit)
         self.btn_exit.place(x=45, y=110)
 
-        self.img_switch = tk.PhotoImage(file='button_switch-to-hdmi.png')
+        self.img_switch = tk.PhotoImage(file='images/button_switch-to-hdmi.png')
         self.btn_switch = tk.Button(self, image=self.img_switch, highlightthickness=0, background="#424242", borderwidth=0,
                                     command=self.quit)
         self.btn_switch.place(x=45, y=160)
@@ -399,17 +399,17 @@ class NewsApp(tk.Frame):
         self.button_image.place(x=2, y=30)
         self.w.place(x=137, y=50)
 
-        self.img_prev = tk.PhotoImage(file="prev.png")
+        self.img_prev = tk.PhotoImage(file="images/prev.png")
         self.button_prev = tk.Button(self)
         self.button_prev.config(image=self.img_prev, background='#000000', borderwidth=0, highlightthickness=0, bd=0,
                                 command=self.prev_button)
         self.button_prev.place(x=20, y=200)
-        self.img_next = tk.PhotoImage(file="next.png")
+        self.img_next = tk.PhotoImage(file="images/next.png")
         self.button_next = tk.Button(self)
         self.button_next.config(image=self.img_next, background='#000000', borderwidth=0, highlightthickness=0, bd=0,
                                 command=self.next_button)
         self.button_next.place(x=280, y=200)
-        self.img_close = tk.PhotoImage(file="close.png")
+        self.img_close = tk.PhotoImage(file="images/close.png")
         self.button_close = tk.Button(self, command=lambda: controller.show_frame(StartPage))
         self.button_close.config(image=self.img_close, background='#000000', borderwidth=0, highlightthickness=0, bd=0)
         self.button_close.place(x=280, y=2)
@@ -548,12 +548,12 @@ class ShareMarketApp(tk.Frame):
         self.config(background='#ffffff')
         for m in range(len(self.list_url)):
             self.getValues(m)
-        self.img_prev = tk.PhotoImage(file="prev.png")
+        self.img_prev = tk.PhotoImage(file="images/prev.png")
         self.button_prev = tk.Button(self)
         self.button_prev.config(image=self.img_prev, background='#ffffff', borderwidth=0, highlightthickness=0, bd=0,
                                 command=self.prev_button)
         self.button_prev.place(x=20, y=200)
-        self.img_next = tk.PhotoImage(file="next.png")
+        self.img_next = tk.PhotoImage(file="images/next.png")
         self.button_next = tk.Button(self)
         self.button_next.config(image=self.img_next, background='#ffffff', borderwidth=0, highlightthickness=0, bd=0,
                                 command=self.next_button)
@@ -571,7 +571,7 @@ class ShareMarketApp(tk.Frame):
                                          foreground="#000000")
         self.label_per_change.place(x=165, y=110, anchor="center")
 
-        self.img_close = tk.PhotoImage(file="close.png")
+        self.img_close = tk.PhotoImage(file="images/close.png")
         self.button_close = tk.Button(self, command=lambda: controller.show_frame(StartPage2))
         self.button_close.config(image=self.img_close, background='#ffffff', borderwidth=0, highlightthickness=0, bd=0)
         self.button_close.place(x=280, y=2)
@@ -579,8 +579,8 @@ class ShareMarketApp(tk.Frame):
         self.label_updateTime = tk.Label(self, font=('Helvetica', 9), background='#ffffff', foreground='#000000')
         self.label_updateTime.place(x=10, y=5)
 
-        self.img_up = tk.PhotoImage(file='up_share_market.png')
-        self.img_down = tk.PhotoImage(file='down_share_market.png')
+        self.img_up = tk.PhotoImage(file='images/up_share_market.png')
+        self.img_down = tk.PhotoImage(file='images/down_share_market.png')
         self.button_up_down = tk.Button(self, background='#ffffff', borderwidth=0, highlightthickness=0, bd=0)
         self.button_up_down.place(x=60, y=60)
 
@@ -604,7 +604,7 @@ class ShareMarketApp(tk.Frame):
 
         self.label_open = tk.Label(self, background='#ffffff', foreground='#000000', font=('Helvetica', 10, 'bold'))
         self.label_open.place(x=220, y=160)
-        self.img_refresh = tk.PhotoImage(file='button_refresh.png')
+        self.img_refresh = tk.PhotoImage(file='images/button_refresh.png')
         self.btn_refresh = tk.Button(self, image=self.img_refresh, background='#ffffff', borderwidth=0, highlightthickness=0, bd=0,
                                      command=self.refresh_button)
         self.btn_refresh.place(x=100, y=185)
@@ -657,17 +657,17 @@ class TwitterApp(tk.Frame):
         tk.Frame.__init__(self, parent)
         self.i = 0
         self.configure(background="#0084b4")
-        self.img_prev = tk.PhotoImage(file="prev.png")
+        self.img_prev = tk.PhotoImage(file="images/prev.png")
         self.button_prev = tk.Button(self)
         self.button_prev.config(image=self.img_prev, background='#0084b4', borderwidth=0, highlightthickness=0, bd=0,
                                 command=self.prev_button)
         self.button_prev.place(x=20, y=200)
-        self.img_next = tk.PhotoImage(file="next.png")
+        self.img_next = tk.PhotoImage(file="images/next.png")
         self.button_next = tk.Button(self)
         self.button_next.config(image=self.img_next, background='#0084b4', borderwidth=0, highlightthickness=0, bd=0,
                                 command=self.next_button)
         self.button_next.place(x=280, y=200)
-        self.img_close = tk.PhotoImage(file="close.png")
+        self.img_close = tk.PhotoImage(file="images/close.png")
         self.button_close = tk.Button(self, command=lambda: controller.show_frame(StartPage))
         self.button_close.config(image=self.img_close, background='#0084b4', borderwidth=0, highlightthickness=0, bd=0)
         self.button_close.place(x=280, y=2)
@@ -682,12 +682,12 @@ class TwitterApp(tk.Frame):
         self.label_retweet = tk.Label(self, background="#0084b4", foreground="#212121", font=("Helvetica", 10))
         self.label_favourite = tk.Label(self, background="#0084b4", foreground="#212121", font=("Helvetica", 10))
 
-        self.img_retweet = tk.PhotoImage(file="retweet.png")
+        self.img_retweet = tk.PhotoImage(file="images/retweet.png")
         self.button_retweet = tk.Button(self, image=self.img_retweet, background='#0084b4', borderwidth=0,
                                         highlightthickness=0)
         self.button_retweet.place(x=70, y=200)
 
-        self.img_favourite = tk.PhotoImage(file="favourite.png")
+        self.img_favourite = tk.PhotoImage(file="images/favourite.png")
         self.button_favourite = tk.Button(self, image=self.img_favourite, background="#0084b4", borderwidth=0,
                                           highlightthickness=0)
         self.button_favourite.place(x=180, y=200)
@@ -739,14 +739,14 @@ class WeatherApp(tk.Frame):
             weather = item['weather']
             weather1 = weather[0]
             url = weather1['icon']
-            base_url = url + '.png'
+            base_url = 'images/' + url + '.png'
             self.list_icon_url.append(base_url)
             self.list_weather.append(weather1['description'])
             temp = main_txt['temp'] - 273.15
             temp = int(temp)
             self.list_humid.append(main_txt['humidity'])
             self.list_temp.append(temp)
-        self.img_close = tk.PhotoImage(file="close.png")
+        self.img_close = tk.PhotoImage(file="images/close.png")
         self.button_close = tk.Button(self, command=lambda: controller.show_frame(StartPage))
         self.button_close.config(image=self.img_close, background='#ffffff', borderwidth=0, highlightthickness=0, bd=0)
         self.button_close.place(x=280, y=2)
@@ -759,13 +759,13 @@ class WeatherApp(tk.Frame):
         self.label2.place(x=160, y=70)
         self.label3 = tk.Label(self, background='#ffffff', foreground='#212121', font=("Helvetica", 14))
         self.label3.place(x=140, y=95)
-        self.img_next = tk.PhotoImage(file="next.png")
+        self.img_next = tk.PhotoImage(file="images/next.png")
         self.button_next = tk.Button(self, command=self.next_button)
         self.button_next.config(image=self.img_next, background='#ffffff', borderwidth=0, highlightthickness=0, bd=0)
         self.button_next.place(x=280, y=200)
         self.label4 = tk.Label(self, background='#ffffff', foreground='#212121', font=("Helvetica", 14))
         self.label4.place(x=100, y=140)
-        self.img_prev = tk.PhotoImage(file="prev.png")
+        self.img_prev = tk.PhotoImage(file="images/prev.png")
         self.button_prev = tk.Button(self, command=self.prev_button)
         self.button_prev.config(image=self.img_prev, background='#ffffff', borderwidth=0, highlightthickness=0, bd=0)
         self.button_prev.place(x=20, y=200)
@@ -866,27 +866,27 @@ class MediaPlayer(tk.Frame):
         self.l2.place(x=165, y=90, anchor="center")
         self.l3 = tk.Label(self.f, text="Album Name", font=("Helvetica", 12), background="#7B1FA2", foreground="#ffffff")
         self.l3.place(x=165, y=120, anchor="center")
-        self.img_close = tk.PhotoImage(file="close.png")
+        self.img_close = tk.PhotoImage(file="images/close.png")
         self.button_close = tk.Button(self, command=lambda: controller.show_frame(StartPage))
         self.button_close.config(image=self.img_close, background='#7B1FA2', borderwidth=0, highlightthickness=0, bd=0)
         self.button_close.place(x=280, y=2)
-        self.img = tk.PhotoImage(file="previous-2.png")
+        self.img = tk.PhotoImage(file="images/previous-2.png")
         self.button = tk.Button(self, command=self.prev_button)
         self.button.config(image=self.img, background='#7B1FA2', borderwidth=0, highlightthickness=0)
         self.button.place(x=10, y=160)
 
-        self.img_play = tk.PhotoImage(file="pause-2.png")
-        self.img_pause = tk.PhotoImage(file="play-2.png")
+        self.img_play = tk.PhotoImage(file="images/pause-2.png")
+        self.img_pause = tk.PhotoImage(file="images/play-2.png")
         self.button1 = tk.Button(self, command=self.pause_button)
         self.button1.config(image=self.img_pause, background='#7B1FA2', borderwidth=0, highlightthickness=0)
         self.button1.place(x=90, y=160)
 
-        self.img3 = tk.PhotoImage(file="stop-2.png")
+        self.img3 = tk.PhotoImage(file="images/stop-2.png")
         self.button2 = tk.Button(self, command=self.stop_button)
         self.button2.config(image=self.img3, background='#7B1FA2', borderwidth=0, highlightthickness=0)
         self.button2.place(x=170, y=160)
 
-        self.img4 = tk.PhotoImage(file="skip-2.png")
+        self.img4 = tk.PhotoImage(file="images/skip-2.png")
         self.button3 = tk.Button(self, command=self.next_button)
         self.button3.config(image=self.img4, background='#7B1FA2', borderwidth=0, highlightthickness=0)
         self.button3.place(x=250, y=160)
@@ -973,7 +973,7 @@ class Alarm_App(tk.Frame):
         x = datetime.datetime.time(datetime.datetime.now())
         self.set_hr, self.set_min, e = str(x).split(':')
         self.config(background="#424242")
-        self.img_close = tk.PhotoImage(file="close.png")
+        self.img_close = tk.PhotoImage(file="images/close.png")
         self.button_close = tk.Button(self, command=lambda: controller.show_frame(StartPage))
         self.button_close.config(image=self.img_close, background='#424242', borderwidth=0, highlightthickness=0, bd=0)
         self.button_close.place(x=280, y=2)
@@ -1003,7 +1003,7 @@ class Alarm_App(tk.Frame):
                                           command=lambda: self.minus_button('min'))
         self.button_minus_min.place(x=170, y=110)
 
-        self.img_set_alarm = tk.PhotoImage(file='button_set-alarm.png')
+        self.img_set_alarm = tk.PhotoImage(file='images/button_set-alarm.png')
         self.button_set_alarm = tk.Button(self, image=self.img_set_alarm, background="#424242", highlightthickness=0,
                                           borderwidth=0, command=self.set_alarm)
         self.button_set_alarm.place(x=90, y=200)

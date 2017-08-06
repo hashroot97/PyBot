@@ -90,7 +90,7 @@ def update_thread():
 root = tk.Tk()
 root.configure(background='#212121')
 root.attributes('-fullscreen', True)
-img5 = tk.PhotoImage(file="apps.png")
+img5 = tk.PhotoImage(file="images/apps.png")
 button3 = tk.Button()
 button3.config(image=img5, borderwidth=0, background='#212121',
                command=app_click_func, highlightthickness=0, bd=0)

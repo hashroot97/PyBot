@@ -59,7 +59,7 @@ def play_alarm():
 
 root = tk.Tk()
 root.config(background="#ffffff")
-img_alarm = tk.PhotoImage(file='alarm_ringing.png')
+img_alarm = tk.PhotoImage(file='images/alarm_ringing.png')
 button_alarm = tk.Button(root, image=img_alarm, highlightthickness=0, borderwidth=0, bd=0, background='#ffffff')
 button_alarm.place(x=30, y=30)
 
@@ -74,12 +74,12 @@ if int(hr) >= 12:
 time_hr = tk.Label(root, text=hr + ':' + min + ' ' + am_pm, background='#ffffff', foreground='#424242',
                    font=("Helvetica", 20, 'bold'))
 time_hr.place(x=150, y=55)
-img_snooze = tk.PhotoImage(file="button_snooze.png")
+img_snooze = tk.PhotoImage(file="images/button_snooze.png")
 button_snooze = tk.Button(root, image=img_snooze, highlightthickness=0, borderwidth=0, background="#ffffff",
                           command=snooze_button)
 button_snooze.place(x=40, y=170)
 
-img_stop = tk.PhotoImage(file="button_stop.png")
+img_stop = tk.PhotoImage(file="images/button_stop.png")
 button_stop = tk.Button(root, image=img_stop, highlightthickness=0, borderwidth=0, background="#ffffff",
                         command=stop_click)
 button_stop.place(x=180, y=170)
